@@ -1,5 +1,9 @@
 import { useEffect } from 'react';
 import { useContacts } from 'hooks/useContacts';
+import { Filter } from '../Filter/Filter';
+import { ContactList } from '../ContactList/ContactList';
+import { Container, Title, SubTitle, MessageEmptyList } from './App.styled';
+import { ContactForm } from 'components/ContactForm/ContactForm';
 
 export const App = () => {
   const { contacts, fetchContacts } = useContacts();
@@ -10,10 +14,9 @@ export const App = () => {
 
   return (
     <Container>
-      <h2>Phonebook</h2>
+      <Title>Phonebook</Title>
       <ContactForm />
-      <h2>Contacts</h2>
-
+      <SubTitle>Contacts</SubTitle>
       {!!contacts.length ? (
         <>
           <Filter />
