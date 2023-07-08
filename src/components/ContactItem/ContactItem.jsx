@@ -4,6 +4,7 @@ import { useContacts } from 'hooks/useContacts';
 
 export const ContactItem = ({ id, name, number }) => {
   const { deleteContact } = useContacts();
+
   return (
     <>
       {name}: {number}

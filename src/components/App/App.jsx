@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Toaster } from 'react-hot-toast';
 import { useContacts } from 'hooks/useContacts';
 import { Filter } from '../Filter/Filter';
 import { ContactList } from '../ContactList/ContactList';
@@ -28,6 +29,7 @@ export const App = () => {
           contact
         </MessageEmptyList>
       )}
+      <Toaster position="top-right" reverseOrder={false} />
     </Container>
   );
 };

@@ -22,7 +22,8 @@ export const FormLabel = styled.label`
 
   &:hover,
   &:focus {
-    color: #3160cd;
+    /* color: #3160cd; */
+    color: #ffff;
   }
 `;
 
@@ -55,7 +56,8 @@ export const ErrorMessageForUser = styled(ErrorMessage)`
 
 export const FormButton = styled.button`
   font-size: 24px;
-  background-color: #3160cd;
+  /* background-color: #3160cd; */
+  background-color: rgba(56, 59, 59, 0.53);
   color: #f4f4f4;
   border: none;
   outline: none;

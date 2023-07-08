@@ -1,4 +1,5 @@
 import { Formik } from 'formik';
+import { toast } from 'react-hot-toast';
 import { validationSchema } from './validationSchema';
 import {
   FormContainer,
@@ -23,6 +24,7 @@ export const ContactForm = () => {
       return;
     }
     addContact({ ...values });
+    toast.success('Contact is added!');
     resetForm();
   };
 

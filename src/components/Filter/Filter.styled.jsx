@@ -15,7 +15,7 @@ export const FilterLabel = styled.label`
 
   &:hover,
   &:focus {
-    color: #3160cd;
+    color: #ffff;
   }
 `;
 

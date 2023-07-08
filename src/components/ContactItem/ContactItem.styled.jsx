@@ -4,7 +4,7 @@ export const SearchButton = styled.button`
   width: 150px;
   margin-left: 48px;
   font-size: 18px;
-  background-color: #3160cd;
+  background-color: rgba(56, 59, 59, 0.53);
   color: #f4f4f4;
   border: none;
   outline: none;
