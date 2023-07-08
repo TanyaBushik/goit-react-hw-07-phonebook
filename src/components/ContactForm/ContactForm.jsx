@@ -20,7 +20,7 @@ export const ContactForm = () => {
     );
 
     if (isExist) {
-      alert(`${values.name} is already in contacts.`);
+      toast.error(`${values.name} is already in contacts.`);
       return;
     }
     addContact({ ...values });
